@@ -72,9 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C43C1B12CFFA03C0006B128 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		3C8AEF622CFF8EDD006E867A = {
 			isa = PBXGroup;
 			children = (
+				3C43C1B12CFFA03C0006B128 /* New Group */,
 				3C8AEF6D2CFF8EDD006E867A /* SportPipoApp */,
 				3C8AEF832CFF8EDF006E867A /* SportPipoAppTests */,
 				3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */,
