@@ -8,7 +8,11 @@
 import Foundation
 
 struct Product: Identifiable {
-    let id = UUID()
+    let id: UUID = UUID()
     let name: String
+    let price: Double
+    let descripcion: String?
+    let category: String
     let imageName: String
+    let linkAmazon: String
 }
