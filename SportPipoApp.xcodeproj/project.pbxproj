@@ -29,20 +29,38 @@
 		3C8AEF8A2CFF8EDF006E867A /* SportPipoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportPipoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3C5684312D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SportPipoAppUITests/SportPipoAppUITests.swift,
+				SportPipoAppUITests/SportPipoAppUITestsLaunchTests.swift,
+			);
+			target = 3C8AEF6A2CFF8EDD006E867A /* SportPipoApp */;
+		};
+		3C5684322D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SportPipoAppUITests/SportPipoAppUITests.swift,
+				SportPipoAppUITests/SportPipoAppUITestsLaunchTests.swift,
+			);
+			target = 3C8AEF892CFF8EDF006E867A /* SportPipoAppUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3C8AEF6D2CFF8EDD006E867A /* SportPipoApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3C5684312D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoApp" target */,
+				3C5684322D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoAppUITests" target */,
+			);
 			path = SportPipoApp;
 			sourceTree = "<group>";
 		};
 		3C8AEF832CFF8EDF006E867A /* SportPipoAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SportPipoAppTests;
-			sourceTree = "<group>";
-		};
-		3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SportPipoAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -77,7 +95,6 @@
 			children = (
 				3C8AEF6D2CFF8EDD006E867A /* SportPipoApp */,
 				3C8AEF832CFF8EDF006E867A /* SportPipoAppTests */,
-				3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */,
 				3C8AEF6C2CFF8EDD006E867A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,9 +169,6 @@
 			);
 			dependencies = (
 				3C8AEF8C2CFF8EDF006E867A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */,
 			);
 			name = SportPipoAppUITests;
 			packageProductDependencies = (
