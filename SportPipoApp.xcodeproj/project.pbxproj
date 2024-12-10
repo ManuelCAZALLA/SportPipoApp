@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3C73A77D2D08C6260094BDE6 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C73A77C2D08C6260094BDE6 /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3C8AEF812CFF8EDF006E867A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C73A77D2D08C6260094BDE6 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,11 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C73A77B2D08C6120094BDE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3C8AEF622CFF8EDD006E867A = {
 			isa = PBXGroup;
 			children = (
 				3C8AEF6D2CFF8EDD006E867A /* SportPipoApp */,
 				3C8AEF832CFF8EDF006E867A /* SportPipoAppTests */,
+				3C73A77B2D08C6120094BDE6 /* Frameworks */,
 				3C8AEF6C2CFF8EDD006E867A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +142,7 @@
 			);
 			name = SportPipoApp;
 			packageProductDependencies = (
+				3C73A77C2D08C6260094BDE6 /* KeychainSwift */,
 			);
 			productName = SportPipoApp;
 			productReference = 3C8AEF6B2CFF8EDD006E867A /* SportPipoApp.app */;
@@ -209,6 +223,9 @@
 			);
 			mainGroup = 3C8AEF622CFF8EDD006E867A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3C73A77A2D08C52B0094BDE6 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3C8AEF6C2CFF8EDD006E867A /* Products */;
 			projectDirPath = "";
@@ -566,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C73A77A2D08C52B0094BDE6 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C73A77C2D08C6260094BDE6 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C73A77A2D08C52B0094BDE6 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C8AEF632CFF8EDD006E867A /* Project object */;
 }
