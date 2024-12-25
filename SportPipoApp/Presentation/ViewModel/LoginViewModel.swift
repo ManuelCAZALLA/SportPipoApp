@@ -10,8 +10,8 @@ import Combine
 import KeychainSwift
 
 class LoginViewModel: ObservableObject {
-    @Published var username: String = "" // Nombre de usuario ingresado en la vista
-    @Published var loginStatus: String?  // Mensaje de estado para la vista
+    @Published var username: String = ""
+    @Published var loginStatus: String?  
 
     private let keychain = KeychainSwift()
 
