@@ -11,7 +11,7 @@ import KeychainSwift
 
 class LoginViewModel: ObservableObject {
     @Published var username: String = ""
-    @Published var loginStatus: String?  
+    @Published var loginStatus: String?
 
     private let keychain = KeychainSwift()
 
