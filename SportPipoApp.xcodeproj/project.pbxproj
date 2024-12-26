@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3C73A77D2D08C6260094BDE6 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3C73A77C2D08C6260094BDE6 /* KeychainSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3C8AEF812CFF8EDF006E867A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,20 +33,38 @@
 		3C8AEF8A2CFF8EDF006E867A /* SportPipoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportPipoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3C5684312D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SportPipoAppUITests/SportPipoAppUITests.swift,
+				SportPipoAppUITests/SportPipoAppUITestsLaunchTests.swift,
+			);
+			target = 3C8AEF6A2CFF8EDD006E867A /* SportPipoApp */;
+		};
+		3C5684322D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoAppUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SportPipoAppUITests/SportPipoAppUITests.swift,
+				SportPipoAppUITests/SportPipoAppUITestsLaunchTests.swift,
+			);
+			target = 3C8AEF892CFF8EDF006E867A /* SportPipoAppUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3C8AEF6D2CFF8EDD006E867A /* SportPipoApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3C5684312D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoApp" target */,
+				3C5684322D04CC7E00D134B0 /* Exceptions for "SportPipoApp" folder in "SportPipoAppUITests" target */,
+			);
 			path = SportPipoApp;
 			sourceTree = "<group>";
 		};
 		3C8AEF832CFF8EDF006E867A /* SportPipoAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SportPipoAppTests;
-			sourceTree = "<group>";
-		};
-		3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SportPipoAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C73A77D2D08C6260094BDE6 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,20 +95,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3C43C1B12CFFA03C0006B128 /* New Group */ = {
+		3C73A77B2D08C6120094BDE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3C8AEF622CFF8EDD006E867A = {
 			isa = PBXGroup;
 			children = (
-				3C43C1B12CFFA03C0006B128 /* New Group */,
 				3C8AEF6D2CFF8EDD006E867A /* SportPipoApp */,
 				3C8AEF832CFF8EDF006E867A /* SportPipoAppTests */,
-				3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */,
+				3C73A77B2D08C6120094BDE6 /* Frameworks */,
 				3C8AEF6C2CFF8EDD006E867A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,6 +142,7 @@
 			);
 			name = SportPipoApp;
 			packageProductDependencies = (
+				3C73A77C2D08C6260094BDE6 /* KeychainSwift */,
 			);
 			productName = SportPipoApp;
 			productReference = 3C8AEF6B2CFF8EDD006E867A /* SportPipoApp.app */;
@@ -161,9 +184,6 @@
 			dependencies = (
 				3C8AEF8C2CFF8EDF006E867A /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				3C8AEF8D2CFF8EDF006E867A /* SportPipoAppUITests */,
-			);
 			name = SportPipoAppUITests;
 			packageProductDependencies = (
 			);
@@ -203,6 +223,9 @@
 			);
 			mainGroup = 3C8AEF622CFF8EDD006E867A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3C73A77A2D08C52B0094BDE6 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3C8AEF6C2CFF8EDD006E867A /* Products */;
 			projectDirPath = "";
@@ -560,6 +583,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C73A77A2D08C52B0094BDE6 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C73A77C2D08C6260094BDE6 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C73A77A2D08C52B0094BDE6 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3C8AEF632CFF8EDD006E867A /* Project object */;
 }

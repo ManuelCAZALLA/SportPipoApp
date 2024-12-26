@@ -28,13 +28,13 @@ struct ProductCategoryView: View {
 
                     ForEach(products) { product in
                         HStack {
-                            Image(systemName: product.imageName)
+                            Image(systemName: product.imageName ?? "")
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .foregroundColor(.blue)
                                 .padding()
 
-                            Text(product.name)
+                            Text(product.name ?? "")
                                 .font(.headline)
                                 .padding()
 
